@@ -11,6 +11,10 @@ const PersonalDetails = () => {
           <label htmlFor="email">Email</label>
           <input type="text" id="email" name="email" />
         </div>
+        <div className="phone-input">
+          <label htmlFor="phone">Phone</label>
+          <input type="text" id="phone" name="phone" />
+        </div>
       </div>
     </div>
   );

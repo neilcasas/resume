@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  height: 100dvh;
+  flex: 1 0 auto;
+}
+
+.control {
+  width: 40%;
+  flex-grow: 1;
+  background-color: lightblue;
+}
+
+.cv-container {
+  width: 60%;
+  flex: 1 0 auto;
+  background-color: lightcoral;
+}

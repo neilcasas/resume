@@ -1,4 +1,4 @@
-const PersonalDetails = () => {
+export const General = () => {
   return (
     <div className="editor-inputs">
       <h1>Personal Details</h1>
@@ -14,6 +14,10 @@ const PersonalDetails = () => {
         <div className="phone-input">
           <label htmlFor="phone">Phone</label>
           <input type="text" id="phone" name="phone" />
+        </div>
+        <div className="address-input">
+          <label htmlFor="address">Address</label>
+          <input type="text" id="address" name="address" />
         </div>
       </div>
     </div>

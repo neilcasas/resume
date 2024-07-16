@@ -1,8 +1,8 @@
 export const General = () => {
   return (
-    <div className="editor-inputs">
+    <section className="editor-input" id="general-input">
       <h1>Personal Details</h1>
-      <div className="input-group">
+      <section className="input-group">
         <div className="name-input">
           <label htmlFor="name">Full Name</label>
           <input type="text" id="name" name="name" />
@@ -19,7 +19,7 @@ export const General = () => {
           <label htmlFor="address">Address</label>
           <input type="text" id="address" name="address" />
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 };

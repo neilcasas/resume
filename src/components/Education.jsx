@@ -1,8 +1,8 @@
 export const Education = () => {
   return (
-    <div className="editor-input">
+    <section className="editor-input" id="education-input">
       <h1>Education</h1>
-      <div className="input-group">
+      <section className="input-group">
         <div className="degree-input">
           <label htmlFor="degree">Degree</label>
           <input type="text" id="degree" name="degree" />
@@ -19,7 +19,11 @@ export const Education = () => {
           <label htmlFor="end">End Date</label>
           <input type="date" id="end" name="end" />
         </div>
-      </div>
-    </div>
+        <div className="location-input">
+          <label htmlFor="location">Location</label>
+          <input type="text" id="location" name="location" />
+        </div>
+      </section>
+    </section>
   );
 };

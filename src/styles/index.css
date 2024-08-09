@@ -5,7 +5,6 @@
 }
 main {
   display: flex;
-  min-height: 100dvh;
   flex: 1 0 auto;
 }
 
@@ -20,7 +19,9 @@ main {
   justify-content: center;
   align-items: center;
   flex: 1 0 auto;
-  width: 60%;
+  width: 50%;
+  min-width: 600px;
+  min-height: 800px;
   background-color: lightcoral;
   padding: 20px;
 }

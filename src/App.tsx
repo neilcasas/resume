@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./styles/index.css";
-import { Editor } from "./components/Editor";
-import { CV } from "./components/CV";
+import { Editor } from "./components/Editor.tsx";
+import { CV } from "./components/CV.tsx";
 
 function App() {
   return (

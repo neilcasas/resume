@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./styles/index.css";
+import "./styles/index.scss";
 import { Editor } from "./components/Editor.tsx";
 import { CV } from "./components/CV.tsx";
 

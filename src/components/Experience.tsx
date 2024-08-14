@@ -35,7 +35,7 @@ function Experience() {
         type="text"
         placeholder="e.g. Manila, Philippines"
       />
-      <textarea className="exp-description"></textarea>;
+      <textarea className="exp-description"></textarea>
     </div>
   );
 }

@@ -1,12 +1,12 @@
-import './App.scss'
+import Editor from "./components/Editor";
+import "./App.scss";
 
 function App() {
-
   return (
     <>
-    <h1>Test</h1>
+      <Editor />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

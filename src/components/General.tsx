@@ -3,6 +3,7 @@ import InputComponent from "./InputComponent";
 function General() {
   return (
     <div className="card">
+      <h1>Personal Details</h1>
       <InputComponent
         title="Full Name"
         id="name"

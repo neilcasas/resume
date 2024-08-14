@@ -1,6 +1,7 @@
 import General from "./General";
 import Experience from "./Experience";
 import Education from "./Education";
+import "../styles/Editor.scss";
 
 function Editor() {
   return (

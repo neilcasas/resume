@@ -31,7 +31,7 @@ function Experience() {
       </div>
       <InputComponent
         title="Location"
-        id="location"
+        id="exp-location"
         type="text"
         placeholder="e.g. Manila, Philippines"
       />

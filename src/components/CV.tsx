@@ -31,11 +31,11 @@ function CV(props: CVProps) {
       <div className="cv-main">
         <div className="cv-content">
           <div className="cv-details">
-            <h1>John Doe</h1>
+            <h1>{props.name}</h1>
             <div className="cv-contact">
-              <div>johndoe@email.com</div>
-              <div>+63 918 647 1576</div>
-              <div>London, UK</div>
+              <div>{props.email}</div>
+              <div>{props.number}</div>
+              <div>{props.location}</div>
             </div>
           </div>
           <div className="cv-education">
@@ -50,4 +50,5 @@ function CV(props: CVProps) {
   );
 }
 
-export default CV;
+export { CV };
+export type { CVProps };

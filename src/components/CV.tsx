@@ -1,5 +1,31 @@
 import "../styles/CV.scss";
-function CV() {
+
+interface EducationObject {
+  school: string;
+  degree: string;
+  startDate: Date;
+  endDate: Date;
+  location: string;
+}
+
+interface ExperienceObject {
+  company: string;
+  position: string;
+  startDate: Date;
+  endDate: Date;
+  location: string;
+}
+
+interface CVProps {
+  name: string;
+  email: string;
+  number: string;
+  location: string;
+  education: EducationObject[];
+  experience: ExperienceObject[];
+}
+
+function CV(props: CVProps) {
   return (
     <div className="cv-container">
       <div className="cv-main">

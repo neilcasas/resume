@@ -1,9 +1,10 @@
+import { useState } from "react";
 import { CV, CVProps } from "./components/CV";
 import Editor from "./components/Editor";
 import "./styles/App.scss";
 
 function App() {
-  const cvProps: CVProps = {
+  const initialCVProps: CVProps = {
     general: {
       name: "Michael Jordan",
       email: "michaeljordan@gmail.com",
@@ -32,9 +33,30 @@ function App() {
     ],
   };
 
+  const [cvProps, setCVProps] = useState(initialCVProps);
+
+  // Create separate change functions for different sections of the CV
+  const updateGeneral = (general: CVProps["general"]) => {
+    setCVProps((prevProps) => ({ ...prevProps, general }));
+  };
+
+  const updateEducation = (education: CVProps["education"]) => {
+    setCVProps((prevProps) => ({ ...prevProps, education }));
+  };
+
+  const updateExperience = (experience: CVProps["experience"]) => {
+    setCVProps((prevProps) => ({ ...prevProps, experience }));
+  };
+
+  // Pass update functions to Editor component
   return (
     <div className="main">
-      <Editor {...cvProps} />
+      <Editor
+        {...cvProps}
+        updateGeneral={updateGeneral}
+        updateEducation={updateEducation}
+        updateExperience={updateExperience}
+      />
       <CV {...cvProps} />
     </div>
   );

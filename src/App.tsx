@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { CV, CVProps } from "./components/CV";
 import Editor from "./components/Editor";
+import Navbar from "./components/Navbar";
 import "./styles/App.scss";
 
 function App() {
@@ -50,15 +51,18 @@ function App() {
 
   // Pass update functions to Editor component
   return (
-    <div className="main">
-      <Editor
-        {...cvProps}
-        updateGeneral={updateGeneral}
-        updateEducation={updateEducation}
-        updateExperience={updateExperience}
-      />
-      <CV {...cvProps} />
-    </div>
+    <>
+      <Navbar />
+      <div className="main">
+        <Editor
+          {...cvProps}
+          updateGeneral={updateGeneral}
+          updateEducation={updateEducation}
+          updateExperience={updateExperience}
+        />
+        <CV {...cvProps} />
+      </div>
+    </>
   );
 }
 

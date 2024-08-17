@@ -16,13 +16,13 @@ function Editor(props: EditorProps) {
     <div className="editor-container">
       <General {...props.general} />
       <div className="exp-container">
-        <h1>Experience</h1>
+        <h4>Experience</h4>
         {props.experience.map((exp, index) => (
           <Experience key={index} {...exp} />
         ))}
       </div>
       <div className="educ-container">
-        <h1>Education</h1>
+        <h4>Education</h4>
         {props.education.map((educ, index) => (
           <Education key={index} {...educ} />
         ))}

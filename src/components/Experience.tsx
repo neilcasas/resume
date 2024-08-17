@@ -41,6 +41,7 @@ function Experience(props: ExperienceObject) {
         placeholder="e.g. Manila, Philippines"
         value={props.location}
       />
+      <div>Description</div>
       <textarea
         className="exp-description"
         value={props.description}

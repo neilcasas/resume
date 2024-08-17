@@ -4,7 +4,7 @@ import InputComponent from "./InputComponent";
 function General(props: GeneralObject) {
   return (
     <div className="card">
-      <h1>Personal Details</h1>
+      <h4>Personal Details</h4>
       <InputComponent
         title="Full Name"
         id="name"

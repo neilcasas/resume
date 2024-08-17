@@ -1,4 +1,5 @@
 import { EducationObject } from "./CV";
+import "../styles/EducationCV.scss";
 
 function EducationCV(props: EducationObject) {
   return (

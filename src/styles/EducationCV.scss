@@ -1,17 +1,14 @@
-.exp-component {
+.educ-component {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
-  .exp-left {
+  .educ-left {
     width: 30%;
   }
-  .exp-right {
+  .educ-right {
     width: 70%;
   }
-  .exp-company {
+  .educ-school {
     font-weight: bold;
-  }
-  .exp-desc {
-    text-align: justify;
   }
 }

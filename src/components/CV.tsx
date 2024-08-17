@@ -61,4 +61,4 @@ function CV(props: CVProps) {
 }
 
 export { CV };
-export type { CVProps, EducationObject, ExperienceObject };
+export type { CVProps, EducationObject, ExperienceObject, GeneralObject };

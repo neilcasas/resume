@@ -22,14 +22,14 @@ function Experience(props: ExperienceObject) {
         <InputComponent
           title="Start Date"
           id="exp-start"
-          type="date"
+          type="text"
           placeholder=""
           value={props.startDate}
         />
         <InputComponent
           title="End Date"
           id="exp-end"
-          type="date"
+          type="text"
           placeholder=""
           value={props.endDate}
         />

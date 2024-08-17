@@ -45,11 +45,13 @@ function CV(props: CVProps) {
             </div>
           </div>
           <div className="cv-experience">
+            <div className="cv-experience-title">Experience</div>
             {props.experience.map((exp) => (
               <ExperienceCV {...exp} />
             ))}
           </div>
           <div className="cv-education">
+            <div className="cv-education-title">Education</div>
             {props.education.map((educ) => (
               <EducationCV {...educ} />
             ))}

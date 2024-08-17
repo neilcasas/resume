@@ -22,14 +22,14 @@ function Education(props: EducationObject) {
         <InputComponent
           title="Start Date"
           id="educ-start"
-          type="date"
+          type="text"
           placeholder=""
           value={props.startDate}
         />
         <InputComponent
           title="End Date"
           id="educ-end"
-          type="date"
+          type="text"
           placeholder=""
           value={props.endDate}
         />

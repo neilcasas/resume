@@ -7,14 +7,18 @@ import "../styles/Editor.scss";
 function Editor(props: CVProps) {
   return (
     <div className="editor-container">
-      <General />
+      <General {...props.general} />
       <div className="exp-container">
         <h1>Experience</h1>
-        <Experience />
+        {props.experience.map((exp) => (
+          <Experience {...exp} />
+        ))}
       </div>
       <div className="educ-container">
         <h1>Education</h1>
-        <Education />
+        {props.education.map((educ) => (
+          <Education {...educ} />
+        ))}
       </div>
     </div>
   );

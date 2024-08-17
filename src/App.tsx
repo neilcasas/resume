@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="main">
-      <Editor />
+      <Editor {...cvProps} />
       <CV {...cvProps} />
     </div>
   );

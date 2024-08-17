@@ -1,4 +1,6 @@
 import "../styles/CV.scss";
+import EducationCV from "./EducationCV";
+import ExperienceCV from "./ExperienceCV";
 
 interface EducationObject {
   school: string;
@@ -39,13 +41,15 @@ function CV(props: CVProps) {
               <div>{props.location}</div>
             </div>
           </div>
-          <div className="cv-education">
-            <h4>Education</h4>
-            <div>University</div>
-          </div>
           <div className="cv-experience">
-            <h4>Experience</h4>
-            <div>Software Engineer</div>
+            {props.experience.map((exp) => (
+              <ExperienceCV {...exp} />
+            ))}
+          </div>
+          <div className="cv-education">
+            {props.education.map((educ) => (
+              <EducationCV {...educ} />
+            ))}
           </div>
         </div>
       </div>

@@ -8,7 +8,15 @@ function App() {
     email: "michaeljordan@gmail.com",
     number: "+63 927 697 1646",
     location: "Los Angeles, California",
-    education: [],
+    education: [
+      {
+        school: "University of North Carolina",
+        degree: "Bachelor of Science in Geography",
+        startDate: "2001",
+        endDate: "2005",
+        location: "Chapel Hill, North Carolina",
+      },
+    ],
     experience: [],
   };
 

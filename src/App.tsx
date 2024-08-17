@@ -17,7 +17,17 @@ function App() {
         location: "Chapel Hill, North Carolina",
       },
     ],
-    experience: [],
+    experience: [
+      {
+        company: "Chicago Bulls",
+        position: "Shooting Guard",
+        startDate: "2005",
+        endDate: "2010",
+        location: "Chicago, Illinois",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus sed nunc ultricies malesuada. Donec auctor, nisl nec ullamcorper vol",
+      },
+    ],
   };
 
   return (

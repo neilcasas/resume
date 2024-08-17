@@ -18,12 +18,15 @@ interface ExperienceObject {
   location: string;
   description: string;
 }
-
-interface CVProps {
+interface GeneralObject {
   name: string;
   email: string;
   number: string;
   location: string;
+}
+
+interface CVProps {
+  general: GeneralObject;
   education: EducationObject[];
   experience: ExperienceObject[];
 }
@@ -34,11 +37,11 @@ function CV(props: CVProps) {
       <div className="cv-main">
         <div className="cv-content">
           <div className="cv-details">
-            <h1>{props.name}</h1>
+            <h1>{props.general.name}</h1>
             <div className="cv-contact">
-              <div>{props.email}</div>
-              <div>{props.number}</div>
-              <div>{props.location}</div>
+              <div>{props.general.email}</div>
+              <div>{props.general.number}</div>
+              <div>{props.general.location}</div>
             </div>
           </div>
           <div className="cv-experience">

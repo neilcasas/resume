@@ -1,9 +1,10 @@
 import General from "./General";
 import Experience from "./Experience";
 import Education from "./Education";
+import { CVProps } from "./CV";
 import "../styles/Editor.scss";
 
-function Editor() {
+function Editor(props: CVProps) {
   return (
     <div className="editor-container">
       <General />

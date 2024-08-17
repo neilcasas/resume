@@ -4,10 +4,12 @@ import "./styles/App.scss";
 
 function App() {
   const cvProps: CVProps = {
-    name: "Michael Jordan",
-    email: "michaeljordan@gmail.com",
-    number: "+63 927 697 1646",
-    location: "Los Angeles, California",
+    general: {
+      name: "Michael Jordan",
+      email: "michaeljordan@gmail.com",
+      number: "+63 927 697 1646",
+      location: "Los Angeles, California",
+    },
     education: [
       {
         school: "University of North Carolina",

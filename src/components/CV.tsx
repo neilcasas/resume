@@ -11,9 +11,10 @@ interface EducationObject {
 interface ExperienceObject {
   company: string;
   position: string;
-  startDate: Date;
-  endDate: Date;
+  startDate: string;
+  endDate: string;
   location: string;
+  description: string;
 }
 
 interface CVProps {

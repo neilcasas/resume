@@ -1,3 +1,5 @@
+import "../styles/Navbar.scss";
+
 function Navbar() {
   return (
     <nav className="navbar">

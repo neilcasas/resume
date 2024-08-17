@@ -1,5 +1,5 @@
 import { ExperienceObject } from "./CV";
-
+import "../styles/ExperienceCV.scss";
 function ExperienceCV(props: ExperienceObject) {
   return (
     <div className="exp-component">

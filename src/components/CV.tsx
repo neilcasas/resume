@@ -3,8 +3,8 @@ import "../styles/CV.scss";
 interface EducationObject {
   school: string;
   degree: string;
-  startDate: Date;
-  endDate: Date;
+  startDate: string;
+  endDate: string;
   location: string;
 }
 
@@ -39,9 +39,11 @@ function CV(props: CVProps) {
             </div>
           </div>
           <div className="cv-education">
+            <h4>Education</h4>
             <div>University</div>
           </div>
           <div className="cv-experience">
+            <h4>Experience</h4>
             <div>Software Engineer</div>
           </div>
         </div>
@@ -51,4 +53,4 @@ function CV(props: CVProps) {
 }
 
 export { CV };
-export type { CVProps };
+export type { CVProps, EducationObject, ExperienceObject };
